@@ -1,0 +1,427 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header {
+    background-image: url("images/drew-coffman-1872.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+header * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Navigation */
+nav {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px 0;
+}
+
+nav::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+    float: left;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+nav ul li {
+    float: left;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0;
+}
+
+
+.hero {
+    margin-top: 100px;
+    clear: both;
+}
+
+.hero h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons button {
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.hero-buttons button:last-child {
+    background-color: #e67e22;
+}
+
+
+.about-us,
+.our-location,
+.our-baking,
+.contact-info {
+    padding: 80px 0;
+}
+
+.about-us .container::after,
+.our-location .container::after,
+.contact-info .container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.about-content,
+.location-content,
+.contact-content {
+    float: left;
+    width: 48%;
+    text-align: left;
+}
+
+.about-image,
+.contact-map {
+    float: right;
+    width: 48%;
+}
+
+.location-image {
+    float: left;
+    width: 48%;
+}
+
+.location-content {
+    float: right;
+    width: 48%;
+}
+
+.about-image img,
+.location-image img,
+.contact-map img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.about-us h2,
+.our-location h2,
+.our-baking h2,
+.contact-info h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-us p,
+.our-location p,
+.contact-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-us ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.about-us ul li::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.about-us ul li img {
+    height: 20px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+
+.our-baking {
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.baking-items::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.baking-item {
+    float: left;
+    width: 30%;
+    margin: 0 1.66%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.baking-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.baking-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.baking-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* Contact Info Section */
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.contact-info ul li::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contact-info ul li img {
+    height: 20px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    clear: both;
+}
+
+footer .container p {
+    margin: 0;
+}
+/* Hamburger styles */
+.nav-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive navigation */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        z-index: 3;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        z-index: 2;
+    }
+
+    .nav-toggle:checked + .logo + .hamburger + .nav-menu {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        color: white;
+        font-size: 18px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+ 
+    .logo,
+    .logo img,
+    .logo span,
+    nav ul,
+    nav ul li,
+    .about-content,
+    .about-image,
+    .location-content,
+    .location-image,
+    .contact-content,
+    .contact-map,
+    .baking-item {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+
+    nav {
+        position: static;
+        transform: none;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+    }
+
+    .hero-buttons button {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .about-content,
+    .location-content,
+    .contact-content {
+        margin-bottom: 30px;
+    }
+
+    .baking-item {
+        margin-bottom: 20px;
+    }
+
+    .about-us .container::after,
+    .our-location .container::after,
+    .contact-info .container::after,
+    .baking-items::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
